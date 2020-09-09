@@ -11,7 +11,7 @@ const Place = ({ item, order, onIncrementPosition, onDecrementPosition, area }) 
 
     const price = useMemo(() => {
         const foodIds = new Set((item.foods || []).map(item => item.id));
-        debugger;
+         
         const result = Object.values(order)
             .filter((value) => {
                 const { item: { id }} = value;
