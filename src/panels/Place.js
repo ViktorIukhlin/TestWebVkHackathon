@@ -21,8 +21,6 @@ const Place = ({ item, order, onIncrementPosition, onDecrementPosition, area }) 
             .reduce((result, value) => {
                 const { count, item: { price }} = value;
 
-                console.log(price)
-
                 return result + parseInt(price) * parseInt(count);
             }, 0);
 
