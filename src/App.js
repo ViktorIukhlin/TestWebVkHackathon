@@ -110,7 +110,7 @@ const placesMap = FOOD_AREAS.reduce((result, area) => {
 	area.items.forEach(item => {
 		result[item.link] = item;
 	});
-
+	
 	return result;
 }, {});
 
@@ -120,7 +120,7 @@ const foodsMap = FOOD_AREAS.reduce((result, area) => {
 			result[food.id] = food;
 		});
 	});
-
+	
 	return result;
 }, {});
 
